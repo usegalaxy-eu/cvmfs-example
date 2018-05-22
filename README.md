@@ -1,10 +1,15 @@
 # CVMFS Setup Example
 
-Setup
+## Setup
 
 ```bash
 # git clone --recursive https://github.com/usegalaxy-eu/cvmfs-example
 # cd cvmfs-example
+```
+
+## Installation
+
+```
 # ansible-playbook -c localhost -i hosts cvmfs_client.yml
 ```
 
@@ -22,6 +27,8 @@ TASK [cvmfs : Install CernVM yum key] ******************************************
 ```
 
 Once that's done, CVMFS will be set up! It uses autofs for mounting, and should have installed + created an autofs mountpoint:
+
+## Testing CVMFS
 
 ```
 # cat /etc/auto.master.d/cvmfs.autofs

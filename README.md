@@ -10,7 +10,7 @@
 ## Installation
 
 ```
-# ansible-playbook -c localhost -i hosts cvmfs_client.yml
+# ansible-playbook -c localhost cvmfs_client.yml
 ```
 
 This will print a lot of output, but it can mostly be ignored unless it fails.

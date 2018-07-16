@@ -1,5 +1,5 @@
 ---
-- hosts: general
+- hosts: localhost
   become: true
   vars:
     cvmfs_role: 'client'

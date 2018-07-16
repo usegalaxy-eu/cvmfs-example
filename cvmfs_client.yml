@@ -1,14 +1,16 @@
 ---
-- hosts: localhost
+- hosts: general
   become: true
   vars:
     cvmfs_role: 'client'
+    galaxy_cvmfs_repos_enabled: true
     cvmfs_server_urls:
       - domain: galaxyproject.org
         urls:
-          - "http://cvmfs1-tacc0.galaxyproject.org/cvmfs/@fqrn@"
-          - "http://cvmfs1-iu0.galaxyproject.org/cvmfs/@fqrn@"
-          - "http://cvmfs1-psu0.galaxyproject.org/cvmfs/@fqrn@"
+          #- "http://cvmfs1-tacc0.galaxyproject.org/cvmfs/@fqrn@"
+          #- "http://cvmfs1-iu0.galaxyproject.org/cvmfs/@fqrn@"
+          #- "http://cvmfs1-psu0.galaxyproject.org/cvmfs/@fqrn@"
+          - "http://cvmfs1-ufr0.usegalaxy.eu/cvmfs/@fqrn@"
           #- "http://ssds1.nemo.privat/cvmfs/@fqrn@"
   roles:
     - cvmfs

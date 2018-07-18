@@ -30,7 +30,7 @@ Once that's done, CVMFS will be set up! It uses autofs for mounting, and should 
 
 ## Testing CVMFS
 
-Check that this file exists
+Check that the following file exists. Depending on your OS it might be `/etc/auto.master` as well.
 
 ```
 # cat /etc/auto.master.d/cvmfs.autofs
@@ -66,3 +66,7 @@ CVMFS_REPOSITORY_NAME=singularity.galaxyproject.org
 # ls /cvmfs/main.galaxyproject.org
 bin  config  deps  fontconfig  galaxy  migrated_tools  python  shed_tools  tags.txt  tmp  tool_data  var  venv
 ```
+
+This will also tell you that we distribute Singularity containers by default. Have a look at `ls -l /cvmfs/singularity.galaxyproject.org/` to see more.
+
+

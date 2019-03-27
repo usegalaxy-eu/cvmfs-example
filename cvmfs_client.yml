@@ -4,7 +4,7 @@
   vars:
     cvmfs_role: 'client'
     galaxy_cvmfs_repos_enabled: true
-    cvmfs_server_urls:
+    galaxy_cvmfs_server_urls:
       - domain: galaxyproject.org
         urls:
           - "http://cvmfs1-tacc0.galaxyproject.org/cvmfs/@fqrn@"
